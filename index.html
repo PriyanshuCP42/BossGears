@@ -28,7 +28,37 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-text">BOSSGEARS</span>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Precision Gear Teeth -->
+                        <path
+                            d="M50 8V18M50 82V92M8 50H18M82 50H92M20.5 20.5L27.5 27.5M72.5 72.5L79.5 79.5M20.5 72.5L27.5 65.5M72.5 20.5L79.5 27.5"
+                            stroke="url(#logo_grad)" stroke-width="4" stroke-linecap="round" />
+
+                        <!-- Inner Interlocking Ring -->
+                        <circle cx="50" cy="50" r="28" stroke="white" stroke-width="1" stroke-dasharray="2 4" />
+
+                        <!-- Core Geometric Gear Structure -->
+                        <path
+                            d="M50 32C40.0589 32 32 40.0589 32 50C32 59.9411 40.0589 68 50 68C59.9411 68 68 59.9411 68 50"
+                            stroke="white" stroke-width="6" stroke-linecap="round" />
+                        <path d="M68 50C68 40.0589 59.9411 32 50 32" stroke="url(#logo_grad)" stroke-width="6"
+                            stroke-linecap="round" stroke-dasharray="10 5" />
+
+                        <!-- Central Hub -->
+                        <circle cx="50" cy="50" r="6" fill="white" />
+
+                        <defs>
+                            <linearGradient id="logo_grad" x1="20" y1="20" x2="80" y2="80"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="white" />
+                                <stop offset="1" stop-color="#94A3B8" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">BOSS<span class="serif-italic"
+                        style="color: inherit; margin-left: 2px;">Gears</span></span>
             </a>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -305,8 +335,19 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <h3>BOSSGEARS</h3>
-                <p style="color: grey;">Precision Gears. Powerful Performance.</p>
+                <div class="logo-icon" style="margin: 0 auto 15px; width: 60px; height: 60px;">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10V20M50 80V90M10 50H20M80 50H90" stroke="white" stroke-width="4" opacity="0.3" />
+                        <circle cx="50" cy="50" r="30" stroke="white" stroke-width="1" stroke-dasharray="4 4"
+                            opacity="0.2" />
+                        <path
+                            d="M50 35C41.7157 35 35 41.7157 35 50C35 58.2843 41.7157 65 50 65C58.2843 65 65 58.2843 65 50"
+                            stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+                        <circle cx="50" cy="50" r="6" fill="white" opacity="0.4" />
+                    </svg>
+                </div>
+                <h3>BOSS<span class="serif-italic" style="color: inherit;">Gears</span></h3>
+                <p style="color: grey;">Precision Engineering. Ultra-Premium Standards.</p>
             </div>
             <div class="footer-copy">
                 <p>&copy; 2026 BossGears Ltd. All Rights Reserved.</p>
